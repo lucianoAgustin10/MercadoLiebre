@@ -1,21 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
 
+@media (min-width: 381px) {
+    .article__general {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home__descripcion {
+        display: none;
+    }
+
+
+}
+
+/* header*/
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-header{
+.main_header {
     background-color: var(--amarillo);
     margin: 0 0 0 0;
-    padding: 0 0 0 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.main_header_top_bar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px;
+    margin: 0px;
+    justify-content:space-between;
+}
+
+.logo {
+    width: 50%;
+    height: 2rem;
+    padding: 0px;
+    display: flex;
+}
+.home__barra_one{
+    width: 50%;
+}
+.home__barra_one input{
+    width: 100%;
+}
+.home__cuotas {
+    font-size: var(--textCuerposDeTexto);
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+}
+
+.home__burguermenu__box{
+    width: 100%;
+    text-align: center;
+
+}
+
+.main_header_botton_bar{
+    display: none;
+}
+
+
+@media (max-width: 381px) {
+    .main_header_botton_bar {
+        display: none;
+    }
+    .home__cuotas{justify-content: center;
+    display: flex;}
+}
+
+@media (max-width : 381px) {
+    .logo {
+        width: 40%;
+    }
+
+    .home__barra_one {
+        width: 20%;
+    }
+
+    .home__cuotas {
+        width: 20%;
+        display: flex;
+    }
+}
+
+.nav {
+    flex-direction: end;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.home__barra {
+    display: flex;
+    width: 2em;
+
+}
+
+.home__barra_one {
+    width: 7em;
+    height: 2rem;
+    padding: 10px;
+    border: 0;
+}
+
+.home__header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+
 body {
     font-family: var(--tipografiaRoboto);
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     width: 100vw;
+
 
 
 }
@@ -34,27 +145,97 @@ p {
     color: var(--Verde);
 }
 
-.home__burguermenu__box {
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-    width: 100vw;
-    border-radius: 20%;
+
+
+.home_fa-truck {
+    border-radius: 50%;
+    border: solid 1px #39b54a;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.home__burguermenu__box i {
-    background-color: var(--Celeste);
+
+
+.home__burguermenu__box {
+    background-color: var(--Azul);
     color: white;
     border-radius: 10%;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 0;
+    display: block;
+    max-width: 50px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
 }
 
-.header__ul li {
+.main_header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.main_header_botton_bar ul {
     list-style: none;
+    margin: 5px;
+    padding: 15px;
+    text-decoration: none;
+    display: flex;
 }
 
-.header__ul li a {
-    text-decoration: none;
+@media (min-width: 381px) {
+    .home__burguermenu__box {
+        display: none;
+    }
+}
 
+
+@media (min-width: 381px) {
+    .main_header_botton_bar {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.main_header_botton_bar li {
+    margin: 10px;
+}
+/*tablet*/ 
+@media (min-width: 481px){
+    .article__general{
+        width: 40%;
+        align-items: flex-start;
+        flex-direction: row;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+
+    }
+}
+/*desktop*/
+@media (min-width: 1600px){
+    .article__general{
+        width: 20%;
+        align-items: flex-start;
+        flex-direction: row;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+.main_header_botton_bar a {
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 16px;
 }
 
 .header__article {
@@ -64,48 +245,20 @@ p {
 
 }
 
-.home__cuotas {
-    text-align: center;
-    font-size: var(--textCuerposDeTexto);
-    margin-top: 10px;
-    margin-bottom: 20px;
+.article__general {
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    margin: 15px;
 }
+
+
+
+
 
 .header__article h1 p {
     list-style: none;
     text-decoration: none;
 
-}
-
-
-
-.home__footer {
-    text-align: center;
-    background-color: white;
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
-
-.home__footer__titulos{
-    text-align: center;
-    color: var(--GrisOscuro);
-    margin: 0;
-}
-
-.home_footer_texto {
-    text-align: center;
-    color: var(--GrisOscuro);
-    font-size: var(--textCuerposDeTexto);
-    margin: 0;
-    padding-bottom: 40px;
-}
-
-.home__footer_tex{
-    text-align: left;
-    color: var(--GrisOscuro);
-    padding-bottom: 3px;
-    margin-bottom: 0;
-    font-size: var(--textCuerposDeTexto);
 }
 
 .home__logo {
@@ -115,15 +268,52 @@ p {
     padding-left: 0rem;
 }
 
+/* main*/
+
 .home_producto_img {
-    width: 100%;
+    width: 90%;
 }
 
-.home__banner{
+.home__banner {
     width: 100%;
+
 }
 
-:host, :root {
+
+/*footer*/
+
+.home_footer_texto {
+    text-align: center;
+    color: var(--GrisOscuro);
+    font-size: var(--textCuerposDeTexto);
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.home__footer_tex {
+    text-align: left;
+    color: var(--GrisOscuro);
+    padding-bottom: 3px;
+    margin-bottom: 0;
+    font-size: var(--textCuerposDeTexto);
+}
+
+.home__footer {
+    text-align: center;
+    background-color: white;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.home__footer__titulos {
+    text-align: center;
+    color: var(--GrisOscuro);
+    margin: 0;
+}
+
+
+
+:root {
 
     --amarillo: #EAC926;
     --Azul: #03264C;
@@ -132,18 +322,20 @@ p {
     --GrisClaro: #ebebeb;
     --Verde: #39b54a;
     --tipografiaRoboto: 'Roboto', sans-serif;
-    --textCuerposDeTexto: 12px;
+    --textCuerposDeTexto: 10px;
     --textTitulares_BasadoEnTuUltimaVisita: 24px;
     --textPrecios: 18px;
     --textDescuentos: 16px;
     --textDescripciones: 16px;
 }
 
-:host, :root {
+
+:root {
     --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
 }
 
-:host, :root {
+
+:root {
     --fa-style-family-brands: "Font Awesome 6 Brands";
     --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
 }
