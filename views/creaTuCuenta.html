@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/creaTucuenta.css">
     <title>crea tu cuenta</title>
 </head>
-<body>
+
+<body class="form_">
     <h1>crea tu cuenta</h1>
-    
+    <form action="/creaTucuenta" method="POST">
+        <p>
+            <label for="text"></label>
+            <input class="formulario-casillas" id=" name" name="name" type="text" placeholder="Nombre y Apellido">
+        </p>
+        <p>
+            <label for="text"></label>
+            <input class="formulario-casillas" id=" name" name="name" type="text" placeholder="nombre del usuario">
+        </p>
+        <p>
+            <label for="email"></label>
+            <input class="formulario-casillas" id=" email" type="email" name="email" placeholder="Email">
+        </p>
+        <p>
+            <label for="text"></label>
+            <input class="formulario-casillas" id=" domicilio" type="text" name="domicilio" placeholder="domicilio">
+        </p>
+        <p>
+        <h1>perfil del usuario</h1>
+
+        <input class="perfil_" type="radio">
+        <label>comprador</label>
+        <input class="perfil_" type="radio">
+        <label>vendedor</label>
+        </p>
+        <p>
+        <h1>fecha de nacimiento</h1>
+        <input class="formulario-casillas" type="date" name="fecha" value="mm-dd-yyyy">
+        </p>
+        <p>
+            <h1>interes</h1>
+            <select  class="formulario-casillas" name="categorias">
+                <option value="1">Electro</option>
+                <option value="2">Moda</option>
+                <option value="3">Hogar</option>
+                <option value="4">Juguetería</option>
+                <option value="5">Vida sana</option>
+        </p>
+        <p>
+
+            <label for=" password"></label>
+            <input class="formulario-casillas" id="password" type="password" name="password"
+                placeholder="Elegi tu Contraseña">
+        </p>
+        <p>
+            <label for="password2"></label>
+            <input class="formulario-casillas" id="password2" type="password" name="password2"
+                placeholder="Confirma tu Contraseña">
+        </p>
+        <p>
+        <h1>foto de usuario</h1>
+        <form method="POST" action="" enctype="multipart/form-data"></form>
+        <input type="file" name="imagen" id="imagen">
+        <input type="submit" name="subir" id="subir" value="subir">
+        </p>
+        <p>
+            <a href="/" class="boton" type="submit"> enviar</button> </a>
+            <button class="boton" type="reset">Borrar</button>
+        </p>
+
+
+
+    </form>
+
 </body>
+
 </html>

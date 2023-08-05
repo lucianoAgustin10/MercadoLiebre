@@ -8,6 +8,14 @@
     .home__descripcion {
         display: none;
     }
+    .home__cuotas{
+        position: absolute;
+        display: block;
+    }
+    .home__burguermenu__box{
+        position: relative;
+        display: block;
+    }
 
 
 }
@@ -54,11 +62,13 @@
     font-weight: 100;
     text-align: center;
     width: 100%;
+    
 }
 
 .home__burguermenu__box{
     width: 100%;
     text-align: center;
+    align-items: center; 
 
 }
 
@@ -218,7 +228,7 @@ p {
     }
 }
 /*desktop*/
-@media (min-width: 1600px){
+@media (min-width: 1200px){
     .article__general{
         width: 20%;
         align-items: flex-start;
@@ -227,6 +237,10 @@ p {
         padding: 0;
         margin: 0;
     }
+    .home__barra_one{
+        justify-content: flex start;
+    }
+
 }
 
 
