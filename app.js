@@ -16,8 +16,17 @@ app.get('/vender', (req, res) =>
     res.sendFile(path.join(__dirname, 'views', 'vender.html')))
 app.get('/ayuda', (req, res) =>
     res.sendFile(path.join(__dirname, 'views', 'ayuda.html')))
-app.get('/creaTuCuenta', (req, res) =>
-    res.sendFile(path.join(__dirname, 'views', 'creaTuCuenta.html')))
+
+
+
+app.get('/crea-tu-cuenta', (req, res) =>
+    res.sendFile(path.join(__dirname, 'views', 'crea-tu-cuenta.html')))
+
+
+
+
+
+    
 app.get('/ingresa', (req, res) =>
     res.sendFile(path.join(__dirname, 'views', 'ingresa.html')))
 app.get('/MisCompras', (req, res) =>
