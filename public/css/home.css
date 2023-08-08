@@ -4,10 +4,9 @@
     .article__general {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    
 
-    .home__descripcion {
-        display: none;
-    }
+   
     .home__cuotas{
         position: absolute;
         display: block;
@@ -79,8 +78,14 @@
 .main_header_botton_bar{
     display: none;
 }
+/* mobil*/
 
-
+@media (max-width : 481px){
+    .home__descripcion{
+        display: none;
+    }
+    
+}
 @media (max-width: 381px) {
     .main_header_botton_bar {
         display: none;
@@ -88,6 +93,7 @@
     .home__cuotas{justify-content: center;
     display: flex;}
 }
+
 
 @media (max-width : 381px) {
     .logo {
@@ -161,9 +167,9 @@ p {
 
 
 
-.home_fa-truck {
+.home_fa-truck i{
     border-radius: 50%;
-    border: solid 1px #39b54a;
+    border: 1px solid #1f5122; 
     width: 50px;
     height: 50px;
     font-size: 16px;
@@ -172,6 +178,11 @@ p {
     justify-content: center;
 }
 
+
+.article__general:hover h4{
+    display: block;
+    
+    }
 
 
 .home__burguermenu__box {
@@ -219,6 +230,21 @@ p {
 .main_header_botton_bar li {
     margin: 10px;
 }
+.home_fa-truck:hover{
+    animation: rotate 1s ;
+    position: absolute;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-90deg);
+    }
+    
+}
+
 /*tablet*/ 
 @media (min-width: 481px){
     .article__general{
@@ -230,6 +256,12 @@ p {
         margin: 0;
 
     }
+    .home__descripcion{
+        display: none;
+    }
+    .article__general:hover h4{
+        display: block;
+        }
 }
 /*desktop*/
 @media (min-width: 1200px){
@@ -241,10 +273,15 @@ p {
         padding: 0;
         margin: 0;
     }
+    .home__descripcion{
+        display: none;
+    }
     .home__barra_one{
         justify-content: flex start;
     }
-
+    .article__general:hover h4{
+        display: block;
+        }
 }
 
 
